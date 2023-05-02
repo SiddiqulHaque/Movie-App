@@ -1,0 +1,31 @@
+.movie{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 260px;
+    box-shadow: 0 3px 10px 0 #aaa;
+    cursor: pointer;
+}
+.movie>img{
+    height: 352px;
+    object-fit: cover;
+}
+.movie>span{
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    margin: 5px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.info-column{
+    display: flex;
+    justify-content: space-between;
+}
+.info-column>span{
+    text-transform: capitalize;
+    font-size: 15px;
+    color: black;
+    font-weight: 500;
+}

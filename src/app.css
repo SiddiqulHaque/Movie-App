@@ -1,0 +1,87 @@
+*{
+    scroll-behavior: smooth;
+}
+.header{
+    display: flex;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    font-size: 25px;
+    font-weight: bold;
+    box-shadow: 0 3px 6px 0 #555;
+    justify-content: space-between;
+    align-items: center;
+}
+@media screen and (max-width:768px){
+    .header{
+        width: fit-content;
+    }
+    .searchbox>input{
+        width: fit-content;
+    }
+}
+.appname{
+    padding: 0.5rem 2rem;
+    display: flex;
+    align-items: center;
+}
+.searchbox{
+    display: flex;
+    padding: 10px 10px;
+    background-color: white;
+    width: 50%;
+    border-radius: 6px;
+    align-items: center;
+    margin-right: 0.5rem;
+    position: relative;
+}
+.searchbox>img{
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    right: 6px;
+    /* top: ; */
+}
+.searchbox>input{
+    color: black;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 10px;
+    width: 18rem;
+    padding: 4px;
+}
+.movielist-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 30px;
+    justify-content: space-evenly;
+    gap: 5px;
+}
+.pages{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    
+}
+.pages>button{
+    padding: 4px 6px;
+    margin: 4px;
+    font-size: 18px;
+    /* width: 40px;
+    height: 30px; */
+    width: fit-content;
+    border-radius: 5px;
+    background:white;
+    color: black;
+    border: 1px solid black;
+}
+.pages>button:hover{
+    transform: scale(1.1);
+}
+.pages>:nth-child(2){
+    background: black;
+    color: white;
+}
